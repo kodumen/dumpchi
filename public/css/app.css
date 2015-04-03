@@ -16,7 +16,10 @@ html {
 
 h1 {
   margin: 0;
-  padding-top: 48px; }
+  padding-top: 24px; }
+  @media screen and (min-width: 726px) {
+    h1 {
+      padding-top: 48px; } }
 
 
 /*# sourceMappingURL=app.css.map */

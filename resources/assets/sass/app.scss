@@ -29,6 +29,9 @@ html {
 
 h1 {
   margin: 0;
-  padding-top: $padding-thick;
+  padding-top: $padding-normal;
+  @media screen and (min-width: $screen-medium - $margin-body) {
+    padding-top: $padding-thick;
+  }
 }
 
