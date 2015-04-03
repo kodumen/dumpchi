@@ -1,2 +1,25 @@
+$base-color: white;
+$font-stack: 'Roboto', sans-serif;
+$margin-body: 8px;
+$padding-thick: 48px;
+$padding-normal: 24px;
 
+html {
+  background-size: cover;
+  color: $base-color;
+  font-size: $font-stack;
+  height:100%;
+
+  body {
+    height: 100%;
+    margin: 0 $margin-body 0 $margin-body;
+    @media screen and (min-width: 459px - $margin-body)
+    and (max-width: 734px - $margin-body) {
+      padding: 0 $padding-normal 0 $padding-normal;
+    }
+    @media screen and (min-width: 734px - $margin-body) {
+      padding: 0 $padding-thick 0 $padding-thick;
+    }
+  }
+}
 

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="background-image: url('{{ asset($photo) }}');">
 <head>
     <meta charset="UTF-8">
     <title>Show My Window</title>
@@ -7,6 +7,6 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div id="window" style="background-image: url('{{ asset($photo) }}');"></div>
+
 </body>
 </html>
