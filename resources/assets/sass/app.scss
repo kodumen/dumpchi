@@ -4,22 +4,31 @@ $margin-body: 8px;
 $padding-thick: 48px;
 $padding-normal: 24px;
 
+$screen-small: 459px;
+$screen-medium: 734px;
+
 html {
   background-size: cover;
   color: $base-color;
+  font-family: $font-stack;
   font-size: $font-stack;
   height:100%;
 
   body {
     height: 100%;
     margin: 0 $margin-body 0 $margin-body;
-    @media screen and (min-width: 459px - $margin-body)
-    and (max-width: 734px - $margin-body) {
+    @media screen and (min-width: $screen-small - $margin-body)
+    and (max-width: $screen-medium - $margin-body) {
       padding: 0 $padding-normal 0 $padding-normal;
     }
-    @media screen and (min-width: 734px - $margin-body) {
+    @media screen and (min-width: $screen-medium - $margin-body) {
       padding: 0 $padding-thick 0 $padding-thick;
     }
   }
+}
+
+h1 {
+  margin: 0;
+  padding-top: $padding-thick;
 }
 
