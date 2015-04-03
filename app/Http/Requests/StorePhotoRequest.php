@@ -22,7 +22,7 @@ class StorePhotoRequest extends Request {
 	public function rules()
 	{
 		return [
-			'photo' => 'required|image|max:3000'
+			'photo' => 'required|mimes:jpeg,png|max:3000'
 		];
 	}
 
