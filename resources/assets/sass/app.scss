@@ -4,6 +4,7 @@ $h1-size: 36px;
 $margin-body: 8px;
 $padding-thick: 48px;
 $padding-normal: 24px;
+$padding-thin: 12px;
 $shadow-color: #202020;
 
 $screen-small: 360px;
@@ -36,6 +37,12 @@ h1 {
   @media screen and (min-width: $screen-medium - $margin-body) {
     padding-top: $padding-thick;
   }
+}
+
+#footer {
+  bottom: 0;
+  padding-bottom: $padding-thin;
+  position: absolute;
 }
 
 .text-shadow {

@@ -8,5 +8,8 @@
 </head>
 <body>
 <h1 class="text-shadow">outside the window</h1>
+<div id="footer">
+    HELLO
+</div>
 </body>
 </html>
