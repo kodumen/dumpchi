@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class HomepageController extends Controller {
 
 	public function getIndex() {
-        return 'HELLO!';
+        return view('homepage');
     }
 
 }
