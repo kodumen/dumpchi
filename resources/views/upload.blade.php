@@ -10,7 +10,7 @@
     <input type="file" name="photo" id="photo" accept="image/jpeg, image/png"/>
     <button type="submit">Upload</button>
 </form>
-@foreach($errors as $error)
+@foreach($errors->all() as $error)
     {{ $error }}
 @endforeach
 </body>
