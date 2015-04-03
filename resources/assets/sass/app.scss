@@ -1,11 +1,13 @@
 $base-color: white;
 $font-stack: 'Roboto', sans-serif;
+$h1-size: 36px;
 $margin-body: 8px;
 $padding-thick: 48px;
 $padding-normal: 24px;
+$shadow-color: #202020;
 
-$screen-small: 459px;
-$screen-medium: 734px;
+$screen-small: 360px;
+$screen-medium: 768px;
 
 html {
   background-size: cover;
@@ -28,6 +30,7 @@ html {
 }
 
 h1 {
+  font-size: $h1-size;
   margin: 0;
   padding-top: $padding-normal;
   @media screen and (min-width: $screen-medium - $margin-body) {
@@ -35,3 +38,6 @@ h1 {
   }
 }
 
+.text-shadow {
+  text-shadow: 0px 1px 2px $shadow-color;
+}

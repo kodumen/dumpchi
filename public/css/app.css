@@ -7,19 +7,23 @@ html {
   html body {
     height: 100%;
     margin: 0 8px 0 8px; }
-    @media screen and (min-width: 451px) and (max-width: 726px) {
+    @media screen and (min-width: 352px) and (max-width: 760px) {
       html body {
         padding: 0 24px 0 24px; } }
-    @media screen and (min-width: 726px) {
+    @media screen and (min-width: 760px) {
       html body {
         padding: 0 48px 0 48px; } }
 
 h1 {
+  font-size: 36px;
   margin: 0;
   padding-top: 24px; }
-  @media screen and (min-width: 726px) {
+  @media screen and (min-width: 760px) {
     h1 {
       padding-top: 48px; } }
+
+.text-shadow {
+  text-shadow: 0px 1px 2px #202020; }
 
 
 /*# sourceMappingURL=app.css.map */
