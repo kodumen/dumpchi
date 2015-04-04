@@ -13,7 +13,7 @@
         <div class="control">
             <a href="#" class="btn">upload</a>
         </div>
-        <div id="next-btn" class="control">
+        <div class="control pull-right">
             <a href="#" class="btn">next</a>
         </div>
     </div>
