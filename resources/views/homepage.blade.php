@@ -14,7 +14,7 @@
             <a href="#" class="btn">upload</a>
         </div>
         <div class="control pull-right">
-            <a href="#" class="btn">next</a>
+            <a href="{{ url('/') }}" class="btn">next</a>
         </div>
     </div>
 </div>
