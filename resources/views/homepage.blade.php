@@ -18,7 +18,7 @@
 <div id="footer">
     <div id="container">
         <div class="control">
-            <a href="#" class="btn">upload</a>
+            <a id="form-toggle" href="#" class="btn">upload</a>
         </div>
         <div class="control pull-right">
             <a href="{{ url('/') }}" class="btn">next</a>
