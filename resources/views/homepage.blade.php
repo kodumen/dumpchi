@@ -11,6 +11,11 @@
 <div id="footer">
     <div id="container">
         <div id="upload-form">
+            {{--<div id="errors">--}}
+                {{--@foreach($errors->all() as $error)--}}
+                    {{--{{ $error }}--}}
+                {{--@endforeach--}}
+            {{--</div>--}}
             <form action="{{ action('HomepageController@postUpload') }}" method="post" enctype="multipart/form-data">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
                 <input type="file" name="photo" id="photo" accept="image/jpeg, image/png"/>
