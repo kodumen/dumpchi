@@ -19,10 +19,12 @@ formToggle.addEventListener('click', function() {
     }
 });
 
-// Firing click event
 var fileUpload = document.querySelector('#photo');
 var customFile = document.querySelector('#custom-file');
 
+fileUpload.style.visibility = 'hidden';
+
+// Firing file input click event
 customFile.addEventListener('click', function() {
     fileUpload.click();
 });
