@@ -13,6 +13,12 @@ $base-shadow: 0px 1px 2px $shadow-color;
 $screen-small: 360px;
 $screen-medium: 768px;
 
+@mixin calc($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
 html {
   background-size: cover;
   color: $base-color;
@@ -109,6 +115,7 @@ h1 {
   box-shadow: $base-shadow;
   display: inline-block;
   position: relative;
+  width: 25%;
   div {
     border: solid 2px $base-color;
     box-shadow: $base-shadow inset;
@@ -116,6 +123,10 @@ h1 {
     overflow: hidden;
     padding: $padding-sthin;
     white-space: nowrap;
-    width: 100px;
+    @include calc(width, '100% - 2px + $padding-sthin');
   }
+}
+
+input[type="file"] {
+  width: 0;
 }
