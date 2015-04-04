@@ -2,12 +2,12 @@
 <html lang="en" style="background-image: url('{{ asset($photo) }}');">
 <head>
     <meta charset="UTF-8">
-    <title>outside the window</title>
+    <title>post moe</title>
     <link href="{{ asset('css/app.css') }}" type="text/css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<h1 class="text-shadow">outside the window</h1>
+<h1 class="text-shadow">post moe</h1>
 <div id="footer">
     <div id="container">
         <div id="errors" class="text-shadow">
