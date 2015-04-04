@@ -83,5 +83,9 @@ h1 {
 input[type="file"] {
   width: 0; }
 
+#errors {
+  height: 150px;
+  overflow: auto; }
+
 
 /*# sourceMappingURL=app.css.map */
