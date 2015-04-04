@@ -24,11 +24,29 @@ h1 {
 
 #footer {
   bottom: 0;
-  padding-bottom: 12px;
+  margin-bottom: 12px;
   position: absolute; }
 
 .text-shadow {
   text-shadow: 0px 1px 2px #202020; }
+
+.btn {
+  border: solid 2px transparent;
+  color: white;
+  display: inline-block;
+  font-size: 24px;
+  padding: 6px;
+  text-decoration: none;
+  text-shadow: 0px 1px 2px #202020; }
+  .btn:hover {
+    border: solid 2px white;
+    box-shadow: 0px 1px 2px #202020 inset; }
+
+.control {
+  display: inline-block;
+  margin-bottom: 12px; }
+  .control:hover {
+    box-shadow: 0px 1px 2px #202020; }
 
 
 /*# sourceMappingURL=app.css.map */

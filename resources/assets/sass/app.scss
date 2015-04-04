@@ -1,11 +1,14 @@
 $base-color: white;
 $font-stack: 'Roboto', sans-serif;
 $h1-size: 36px;
+$font-normal: 24px;
 $margin-body: 8px;
 $padding-thick: 48px;
 $padding-normal: 24px;
 $padding-thin: 12px;
+$padding-sthin: 6px;
 $shadow-color: #202020;
+$base-shadow: 0px 1px 2px $shadow-color;
 
 $screen-small: 360px;
 $screen-medium: 768px;
@@ -41,10 +44,32 @@ h1 {
 
 #footer {
   bottom: 0;
-  padding-bottom: $padding-thin;
+  margin-bottom: $padding-thin;
   position: absolute;
 }
 
 .text-shadow {
-  text-shadow: 0px 1px 2px $shadow-color;
+  text-shadow: $base-shadow;
+}
+
+.btn {
+  border: solid 2px transparent;
+  color: $base-color;
+  display: inline-block;
+  font-size: $font-normal;
+  padding: $padding-sthin;
+  text-decoration: none;
+  text-shadow: $base-shadow;
+  &:hover {
+    border: solid 2px $base-color;
+    box-shadow: $base-shadow inset;
+  }
+}
+
+.control {
+  display: inline-block;
+  margin-bottom: $padding-thin;
+  &:hover {
+    box-shadow: $base-shadow;
+  }
 }

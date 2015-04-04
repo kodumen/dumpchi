@@ -9,7 +9,12 @@
 <body>
 <h1 class="text-shadow">outside the window</h1>
 <div id="footer">
-    HELLO
+    <div class="control">
+        <a href="#" class="btn">upload</a>
+    </div>
+    <div class="control">
+        <a href="#" class="btn">next</a>
+    </div>
 </div>
 </body>
 </html>
