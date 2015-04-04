@@ -65,18 +65,8 @@ h1 {
   text-shadow: $base-shadow;
 }
 
-.btn {
-  border: solid 2px transparent;
-  color: $base-color;
-  display: inline-block;
-  font-size: $font-normal;
-  padding: $padding-sthin;
-  text-decoration: none;
-  text-shadow: $base-shadow;
-  &:hover {
-    border: solid 2px $base-color;
-    box-shadow: $base-shadow inset;
-  }
+.pull-right {
+  float: right;
 }
 
 .control {
@@ -85,8 +75,19 @@ h1 {
   &:hover {
     box-shadow: $base-shadow;
   }
+
+  .btn {
+    border: solid 2px transparent;
+    color: $base-color;
+    display: inline-block;
+    font-size: $font-normal;
+    padding: $padding-sthin;
+    text-decoration: none;
+    text-shadow: $base-shadow;
+    &:hover {
+      border: solid 2px $base-color;
+      box-shadow: $base-shadow inset;
+    }
+  }
 }
 
-.pull-right {
-  float: right;
-}
