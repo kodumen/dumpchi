@@ -9,11 +9,13 @@
 <body>
 <h1 class="text-shadow">outside the window</h1>
 <div id="footer">
-    <div class="control">
-        <a href="#" class="btn">upload</a>
-    </div>
-    <div class="control">
-        <a href="#" class="btn">next</a>
+    <div id="container">
+        <div class="control">
+            <a href="#" class="btn">upload</a>
+        </div>
+        <div id="next-btn" class="control">
+            <a href="#" class="btn">next</a>
+        </div>
     </div>
 </div>
 </body>

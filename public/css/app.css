@@ -2,7 +2,7 @@ html {
   background-size: cover;
   color: white;
   font-family: 'Roboto', sans-serif;
-  font-size: 'Roboto', sans-serif;
+  font-size: 24px;
   height: 100%; }
   html body {
     height: 100%;
@@ -24,8 +24,18 @@ h1 {
 
 #footer {
   bottom: 0;
+  left: 0;
   margin-bottom: 12px;
-  position: absolute; }
+  position: absolute;
+  width: 100%; }
+  #footer #container {
+    margin: 0 8px 0 8px; }
+    @media screen and (min-width: 352px) and (max-width: 760px) {
+      #footer #container {
+        padding: 0 24px 0 24px; } }
+    @media screen and (min-width: 760px) {
+      #footer #container {
+        padding: 0 48px 0 48px; } }
 
 .text-shadow {
   text-shadow: 0px 1px 2px #202020; }

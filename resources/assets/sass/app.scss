@@ -44,8 +44,21 @@ h1 {
 
 #footer {
   bottom: 0;
+  left: 0;
   margin-bottom: $padding-thin;
   position: absolute;
+  width: 100%;
+
+  #container {
+    margin: 0 $margin-body 0 $margin-body;
+    @media screen and (min-width: $screen-small - $margin-body)
+    and (max-width: $screen-medium - $margin-body) {
+      padding: 0 $padding-normal 0 $padding-normal;
+    }
+    @media screen and (min-width: $screen-medium - $margin-body) {
+      padding: 0 $padding-thick 0 $padding-thick;
+    }
+  }
 }
 
 .text-shadow {
