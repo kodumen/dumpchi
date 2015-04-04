@@ -17,6 +17,7 @@
                 <div class="btn">
                     <button type="submit">upload</button>
                 </div>
+                <a id="custom-file">browse</a>
             </form>
         </div>
         <div class="btn">
