@@ -26,5 +26,6 @@ class HomepageController extends Controller {
         // Save file
         $filename = sprintf('%d.%s', $photo->id, $file_extension);
         Storage::put($filename, File::get($file));
+        return redirect(url('/'));
     }
 }
