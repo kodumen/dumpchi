@@ -8,6 +8,13 @@
 </head>
 <body>
 <h1 class="text-shadow">outside the window</h1>
+<div id="upload-form">
+    <form action="{{ action('HomepageController@postUpload') }}" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
+        <input type="file" name="photo" id="photo" accept="image/jpeg, image/png"/>
+        <button type="submit">Upload</button>
+    </form>
+</div>
 <div id="footer">
     <div id="container">
         <div class="control">
@@ -18,5 +25,6 @@
         </div>
     </div>
 </div>
+<script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
