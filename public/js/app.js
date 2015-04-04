@@ -31,7 +31,7 @@ customFile.addEventListener('click', function() {
 
 // Display filename of selected file
 // after selection
-var filenameBox = document.querySelector('#filename-box');
+var filenameBox = document.querySelector('#filename-box div');
 fileUpload.addEventListener('change', function() {
     filenameBox.textContent = fileUpload.value;
 });
