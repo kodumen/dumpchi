@@ -20,11 +20,15 @@ $screen-medium: 768px;
 }
 
 html {
+  background-position: center;
   background-size: cover;
   color: $base-color;
   font-family: $font-stack;
   font-size: $font-normal;
   height:100%;
+//  @media screen and (orientation: portrait), (max-aspect-ratio: 1/1) {
+//    background-position: center;
+//  }
 
   body {
     height: 100%;
