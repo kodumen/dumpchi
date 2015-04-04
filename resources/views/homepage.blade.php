@@ -14,10 +14,10 @@
             <form action="{{ action('HomepageController@postUpload') }}" method="post" enctype="multipart/form-data">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
                 <input type="file" name="photo" id="photo" accept="image/jpeg, image/png"/>
+                <div class="btn"><a id="custom-file">browse</a></div>
                 <div class="btn">
                     <button type="submit">upload</button>
                 </div>
-                <a id="custom-file">browse</a>
             </form>
         </div>
         <div class="btn">
