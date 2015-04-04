@@ -15,6 +15,7 @@
                 <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
                 <input type="file" name="photo" id="photo" accept="image/jpeg, image/png"/>
                 <div class="btn"><a id="custom-file">browse</a></div>
+                <div id="filename-box"></div>
                 <div class="btn">
                     <button type="submit">upload</button>
                 </div>

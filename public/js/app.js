@@ -28,3 +28,10 @@ fileUpload.style.visibility = 'hidden';
 customFile.addEventListener('click', function() {
     fileUpload.click();
 });
+
+// Display filename of selected file
+// after selection
+var filenameBox = document.querySelector('#filename-box');
+fileUpload.addEventListener('change', function() {
+    filenameBox.textContent = fileUpload.value;
+});
