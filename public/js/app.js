@@ -4,26 +4,25 @@
 
 // Hiding the form
 var uploadForm = document.querySelector('#upload-form');
-uploadForm.style.display = 'none';
+uploadForm.style.visibility = 'hidden';
 
 var formToggle = document.querySelector('#form-toggle');
 formToggle.addEventListener('click', function() {
     // Show or hide form
-    if(uploadForm.style.display === 'none') {
-        uploadForm.style.display = '';
+    if(uploadForm.style.visibility === 'hidden') {
+        uploadForm.style.visibility = '';
         formToggle.textContent = 'cancel';
     }
     else {
-        uploadForm.style.display = 'none';
+        uploadForm.style.visibility = 'hidden';
         formToggle.textContent = 'upload';
     }
-})
+});
 
-// Styling the form
+// Firing click event
 var fileUpload = document.querySelector('#photo');
-var fileSelectEvent = document.createEvent('HTMLEvents');
 var customFile = document.querySelector('#custom-file');
+
 customFile.addEventListener('click', function() {
-    fileSelectEvent.initEvent('click', true, false);
-    fileUpload.dispatchEvent(fileSelectEvent);
-})
+    fileUpload.click();
+});
