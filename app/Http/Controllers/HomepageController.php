@@ -12,6 +12,8 @@ use File;
 class HomepageController extends Controller {
 
 	public function getIndex() {
+        $photos = Photo::all();
+        if(count($photos) < 1) return view('homepage')->with('photo', '');
         $photo = Photo::all()[rand(0, Photo::all()->count() - 1)];
         return view('homepage')->with('photo', 'img/'.$photo->getFilename());
     }
