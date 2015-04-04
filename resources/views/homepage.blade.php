@@ -8,15 +8,15 @@
 </head>
 <body>
 <h1 class="text-shadow">outside the window</h1>
-<div id="upload-form">
-    <form action="{{ action('HomepageController@postUpload') }}" method="post" enctype="multipart/form-data">
-        <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
-        <input type="file" name="photo" id="photo" accept="image/jpeg, image/png"/>
-        <button type="submit">Upload</button>
-    </form>
-</div>
 <div id="footer">
     <div id="container">
+        <div id="upload-form">
+            <form action="{{ action('HomepageController@postUpload') }}" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
+                <input type="file" name="photo" id="photo" accept="image/jpeg, image/png"/>
+                <button type="submit">Upload</button>
+            </form>
+        </div>
         <div class="control">
             <a id="form-toggle" href="#" class="btn">upload</a>
         </div>
