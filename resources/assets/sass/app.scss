@@ -69,18 +69,20 @@ h1 {
   float: right;
 }
 
-.control {
+.btn {
   display: inline-block;
   margin-bottom: $padding-thin;
   &:hover {
     box-shadow: $base-shadow;
   }
 
-  .btn {
+  a, button {
+    background-color: transparent;
     border: solid 2px transparent;
     color: $base-color;
     display: inline-block;
-    font-size: $font-normal;
+    font-family: inherit;
+    font-size: inherit;
     padding: $padding-sthin;
     text-decoration: none;
     text-shadow: $base-shadow;
@@ -88,6 +90,13 @@ h1 {
       border: solid 2px $base-color;
       box-shadow: $base-shadow inset;
     }
+  }
+
+  // Remove spaces inside buttons in Firefox
+  input[type="button"]::-moz-focus-inner,
+  button::-moz-focus-inner {
+    border: none;
+    padding: 0;
   }
 }
 

@@ -43,22 +43,27 @@ h1 {
 .pull-right {
   float: right; }
 
-.control {
+.btn {
   display: inline-block;
   margin-bottom: 12px; }
-  .control:hover {
+  .btn:hover {
     box-shadow: 0px 1px 2px #202020; }
-  .control .btn {
+  .btn a, .btn button {
+    background-color: transparent;
     border: solid 2px transparent;
     color: white;
     display: inline-block;
-    font-size: 24px;
+    font-family: inherit;
+    font-size: inherit;
     padding: 6px;
     text-decoration: none;
     text-shadow: 0px 1px 2px #202020; }
-    .control .btn:hover {
+    .btn a:hover, .btn button:hover {
       border: solid 2px white;
       box-shadow: 0px 1px 2px #202020 inset; }
+  .btn input[type="button"]::-moz-focus-inner, .btn button::-moz-focus-inner {
+    border: none;
+    padding: 0; }
 
 #upload-form {
   margin-bottom: 6px; }
