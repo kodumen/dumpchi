@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" style="background-image: url('{{ asset($photo) }}');">
+<html lang="en" style="background-image: url('{{ url($photo) }}');">
 <head>
     <meta charset="UTF-8">
     <title>post moe</title>
