@@ -45,7 +45,7 @@ return [
 
 		'local' => [
 			'driver' => 'local',
-			'root'   => $_ENV['OPENSHIFT_DATA_DIR'].'/img',
+			'root'   => env('OPENSHIFT_DATA_DIR', storage_path()).'/img',
 		],
 
 		's3' => [
