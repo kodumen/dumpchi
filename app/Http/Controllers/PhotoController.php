@@ -4,9 +4,15 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
+use Storage;
 
 class PhotoController extends Controller {
 
-	//
+	public function getPhoto($id) {
+        $photo = Photo::findOrFail($id);
+        $content = Storage::get($photo->filename);
+
+        return response($content)->header('Content-Type', $photo->mimetype);
+    }
 
 }
