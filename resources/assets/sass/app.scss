@@ -1,0 +1,137 @@
+$base-color: white;
+$font-big: 36px;
+$font-normal: 24px;
+$font-stack: 'Roboto', sans-serif;
+$margin-body: 8px;
+$padding-thick: 48px;
+$padding-normal: 24px;
+$padding-thin: 12px;
+$padding-sthin: 6px;
+$shadow-color: #202020;
+$base-shadow: 0px 1px 2px $shadow-color;
+
+$screen-small: 360px;
+$screen-medium: 768px;
+
+@mixin calc($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+html {
+  background-position: center;
+  background-size: cover;
+  color: $base-color;
+  font-family: $font-stack;
+  font-size: $font-normal;
+  height:100%;
+//  @media screen and (orientation: portrait), (max-aspect-ratio: 1/1) {
+//    background-position: center;
+//  }
+
+  body {
+    height: 100%;
+    margin: 0 $margin-body 0 $margin-body;
+    @media screen and (min-width: $screen-small - $margin-body)
+    and (max-width: $screen-medium - $margin-body) {
+      padding: 0 $padding-normal 0 $padding-normal;
+    }
+    @media screen and (min-width: $screen-medium - $margin-body) {
+      padding: 0 $padding-thick 0 $padding-thick;
+    }
+  }
+}
+
+h1 {
+  font-size: $font-big;
+  margin: 0;
+  padding-top: $padding-normal;
+  @media screen and (min-width: $screen-medium - $margin-body) {
+    padding-top: $padding-thick;
+  }
+}
+
+#footer {
+  bottom: 0;
+  left: 0;
+  margin-bottom: $padding-thin;
+  position: absolute;
+  width: 100%;
+
+  #container {
+    margin: 0 $margin-body 0 $margin-body;
+    @media screen and (min-width: $screen-small - $margin-body)
+    and (max-width: $screen-medium - $margin-body) {
+      padding: 0 $padding-normal 0 $padding-normal;
+    }
+    @media screen and (min-width: $screen-medium - $margin-body) {
+      padding: 0 $padding-thick 0 $padding-thick;
+    }
+  }
+}
+
+.text-shadow {
+  text-shadow: $base-shadow;
+}
+
+.pull-right {
+  float: right;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: $padding-thin;
+  &:hover {
+    box-shadow: $base-shadow;
+  }
+
+  a, button {
+    background-color: transparent;
+    border: solid 2px transparent;
+    color: $base-color;
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    padding: $padding-sthin;
+    text-decoration: none;
+    text-shadow: $base-shadow;
+    &:hover {
+      border: solid 2px $base-color;
+      box-shadow: $base-shadow inset;
+    }
+  }
+
+  // Remove spaces inside buttons in Firefox
+  input[type="button"]::-moz-focus-inner,
+  button::-moz-focus-inner {
+    border: none;
+    padding: 0;
+  }
+}
+
+#filename-box{
+  bottom: -(2px + ($padding-sthin * 2));
+  box-shadow: $base-shadow;
+  display: inline-block;
+  position: relative;
+  width: 25%;
+  div {
+    border: solid 2px $base-color;
+    box-shadow: $base-shadow inset;
+    height: 29px;
+    overflow: hidden;
+    padding: $padding-sthin;
+    white-space: nowrap;
+    @include calc(width, '100% - 2px + $padding-sthin');
+  }
+}
+
+input[type="file"] {
+  width: 0;
+}
+
+#errors {
+  height: 150px;
+  overflow: auto;
+}

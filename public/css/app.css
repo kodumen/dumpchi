@@ -1,0 +1,92 @@
+html {
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  height: 100%; }
+  html body {
+    height: 100%;
+    margin: 0 8px 0 8px; }
+    @media screen and (min-width: 352px) and (max-width: 760px) {
+      html body {
+        padding: 0 24px 0 24px; } }
+    @media screen and (min-width: 760px) {
+      html body {
+        padding: 0 48px 0 48px; } }
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+  padding-top: 24px; }
+  @media screen and (min-width: 760px) {
+    h1 {
+      padding-top: 48px; } }
+
+#footer {
+  bottom: 0;
+  left: 0;
+  margin-bottom: 12px;
+  position: absolute;
+  width: 100%; }
+  #footer #container {
+    margin: 0 8px 0 8px; }
+    @media screen and (min-width: 352px) and (max-width: 760px) {
+      #footer #container {
+        padding: 0 24px 0 24px; } }
+    @media screen and (min-width: 760px) {
+      #footer #container {
+        padding: 0 48px 0 48px; } }
+
+.text-shadow {
+  text-shadow: 0px 1px 2px #202020; }
+
+.pull-right {
+  float: right; }
+
+.btn {
+  display: inline-block;
+  margin-bottom: 12px; }
+  .btn:hover {
+    box-shadow: 0px 1px 2px #202020; }
+  .btn a, .btn button {
+    background-color: transparent;
+    border: solid 2px transparent;
+    color: white;
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 6px;
+    text-decoration: none;
+    text-shadow: 0px 1px 2px #202020; }
+    .btn a:hover, .btn button:hover {
+      border: solid 2px white;
+      box-shadow: 0px 1px 2px #202020 inset; }
+  .btn input[type="button"]::-moz-focus-inner, .btn button::-moz-focus-inner {
+    border: none;
+    padding: 0; }
+
+#filename-box {
+  bottom: -14px;
+  box-shadow: 0px 1px 2px #202020;
+  display: inline-block;
+  position: relative;
+  width: 25%; }
+  #filename-box div {
+    border: solid 2px white;
+    box-shadow: 0px 1px 2px #202020 inset;
+    height: 29px;
+    overflow: hidden;
+    padding: 6px;
+    white-space: nowrap;
+    width: calc(100% - 2px + $padding-sthin); }
+
+input[type="file"] {
+  width: 0; }
+
+#errors {
+  height: 150px;
+  overflow: auto; }
+
+
+/*# sourceMappingURL=app.css.map */
