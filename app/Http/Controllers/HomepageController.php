@@ -21,14 +21,13 @@ class HomepageController extends Controller {
 
     public function postUpload(StorePhotoRequest $request) {
         $file = $request->file('photo');
-        $file_extension = $file->guessExtension();
         // Insert to database
         $photo = new Photo();
-        $photo->file_extension = $file_extension;
+        $photo->filename = $file->getClientOriginalName();
+        $photo->mimetype = $file->getClientMimeType();
         $photo->save();
         // Save file
-        $filename = sprintf('%d.%s', $photo->id, $file_extension);
-        Storage::put($filename, File::get($file));
+        Storage::put($file->getClientOriginalName(), File::get($file));
         return redirect(url('/'));
     }
 }
