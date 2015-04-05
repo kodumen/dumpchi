@@ -45,7 +45,7 @@ return [
 
 		'local' => [
 			'driver' => 'local',
-			'root'   => base_path().'/public/img',
+			'root'   => storage_path().'/app',
 		],
 
 		's3' => [
@@ -63,7 +63,6 @@ return [
 			'container' => 'your-container',
 			'endpoint'  => 'https://identity.api.rackspacecloud.com/v2.0/',
 			'region'    => 'IAD',
-			'url_type'  => 'publicURL'
 		],
 
 	],
